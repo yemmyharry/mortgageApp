@@ -24,15 +24,14 @@ export default function NavBar() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar>
         <Toolbar>
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-            <MenuIcon />
           </IconButton>
           <Typography variant="h6" className={classes.title}>
             Mortgage
           </Typography>
-          <Button color="inherit">Login</Button>
+          <Button color="inherit">Calculator</Button>
         </Toolbar>
       </AppBar>
     </div>
