@@ -7,6 +7,7 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
+import Button from '@material-ui/core/Button';
 
 const useStyles = makeStyles({
     table: {
@@ -35,7 +36,14 @@ export default function Post({post}) {
                             <TableCell component="th" scope="row">
                                 {eachPost.name}
                             </TableCell>
-                            <TableCell>del</TableCell>
+                            <TableCell>
+                            <Button variant="contained" color="primary">
+                                EDIT
+                            </Button> <br/><br/>
+                            <Button variant="contained" color="primary">
+                                DELETE
+                            </Button>
+                            </TableCell>
                         </TableRow>
                     ))}
                 </TableBody>
