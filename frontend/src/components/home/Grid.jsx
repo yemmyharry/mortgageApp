@@ -25,22 +25,22 @@ export default function CenteredGrid() {
     name:""
 }])
 
-const createPost = () => {
+// const createPost = () => {
 
-  axios.post("http://localhost:3000/create", {name: "ameriaca"}).then(res => {
-      let data = res.data.data
-      setPost(data)
-      // console.log(data)
-  }).catch(err => {
-      console.log(err)
-  })
-}
+//   axios.post("http://localhost:3000/create", {name: "ameriaca"}).then(res => {
+//       let data = res.data.data
+//       setPost(data)
+//       // console.log(data)
+//   }).catch(err => {
+//       console.log(err)
+//   })
+// }
 
-const handleSubmit = (e) => {
-  e.preventDefault()
-  createPost()
+// const handleSubmit = (e) => {
+//   e.preventDefault()
+//   createPost()
 
-}
+// }
 
   const GetBanks = () => {
       axios.get("http://localhost:3000/").then(res => {
@@ -73,7 +73,7 @@ const handleSubmit = (e) => {
         </Grid>
         <Grid item xs={6}>
           <Paper className={classes.paper}>
-          <Form/>
+          <Form />
     
           </Paper>
         </Grid>
